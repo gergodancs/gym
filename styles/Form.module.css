@@ -1,0 +1,26 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form label {
+  margin-top: 15px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.form input {
+  padding-left: 10px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background: rgba(34, 34, 34, 0.671);
+  color: aliceblue;
+}
+.submit {
+  margin-top: 20px;
+}
+.form input::placeholder {
+  color: rgba(240, 248, 255, 0.651);
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+}

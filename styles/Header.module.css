@@ -1,0 +1,38 @@
+.header_container {
+  width: 100%;
+  padding: 100px 100px 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-size: 5.7rem;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  font-family: "Teko", sans-serif;
+  color: rgba(34, 34, 34, 0.767);
+}
+.sub_title {
+  font-size: 2.7rem;
+  color: rgba(34, 34, 34, 0.89);
+}
+.description_container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  width: 35%;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.377);
+  backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
+  border-radius: 6px;
+}
+.description {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: rgba(34, 34, 34, 0.747);
+}

@@ -1,0 +1,35 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  color: rgb(39, 37, 37);
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
+}
+.link_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.link_container > li {
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+.link_container > li:hover {
+  transform: scale(0.95);
+  transition-duration: 0.2s;
+  background: rgba(255, 255, 255, 0.363);
+  color: black;
+}
+.icon {
+  width: 100px;
+  height: 50px;
+}

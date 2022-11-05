@@ -1,0 +1,12 @@
+.app_container {
+  width: 100vw;
+  max-width: 100%;
+  background-image: url("../public/pics/pexels-tima-miroshnichenko-6388457.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.main {
+  min-height: 100vh;
+  max-height: 100%;
+  width: 100%;
+}

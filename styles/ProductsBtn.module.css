@@ -1,0 +1,23 @@
+.products_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 400px;
+  background-color: rgba(27, 22, 22, 0.801);
+  position: relative;
+  top: 150px;
+  left: 80px;
+  color: rgba(240, 248, 255, 0.788);
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  border-radius: 6px;
+  box-shadow: 2px 2px 4px black;
+}
+.products_btn:hover {
+  transform: scale(0.98);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.801);
+  color: azure;
+  transition-duration: 0.2s;
+}
