@@ -21,3 +21,16 @@
   color: azure;
   transition-duration: 0.2s;
 }
+@media screen and (max-width: 376px) {
+  .products_btn {
+    top: 70px;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .products_btn {
+    width: 100%;
+    left: 0;
+  }
+}

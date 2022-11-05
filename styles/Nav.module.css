@@ -33,3 +33,12 @@
   width: 100px;
   height: 50px;
 }
+@media screen and (max-width: 500px) {
+  .icon {
+    width: 80px;
+    height: 40px;
+  }
+  .link_container > li {
+    font-size: 0.8em;
+  }
+}
