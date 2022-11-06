@@ -8,25 +8,22 @@ const Product = (props) => {
 
   return (
     <div className={styles.card}>
-      {!showForm && (
-        <>
-          <h2>{props.title}</h2>
-          <Image
-            src={props.src}
-            alt="product for sale"
-            width={300}
-            height={350}
-          />
-          <p>{props.description}</p>
-          <span>Ár: {props.price}</span>
-        </>
-      )}
+      <div className={showForm ? styles.hidden : ""}>
+        <h2>{props.title}</h2>
+        <Image
+          src={props.src}
+          alt="product for sale"
+          width={300}
+          height={350}
+        />
+        <p>{props.description}</p>
+        <span>Ár: {props.price}</span>
+      </div>
 
-      {showForm && (
-        <div className={showForm ? "" : styles.hidden}>
-          <Form product={props.title} />
-        </div>
-      )}
+      <div className={showForm ? "" : styles.hidden}>
+        <Form product={props.title} />
+      </div>
+
       <button onClick={() => setShowForm((prevState) => !prevState)}>
         {showForm ? "VISSZA" : "MEGRENDELEM!"}
       </button>
