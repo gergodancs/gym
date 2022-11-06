@@ -1,5 +1,7 @@
 .products_container {
   margin: 0 auto;
+  height: 100vh;
+  overflow-y: scroll;
   padding-top: 100px;
   width: 80%;
   display: grid;
@@ -7,6 +9,9 @@
   row-gap: 10px;
   justify-content: center;
   align-items: center;
+}
+.products_container::-webkit-scrollbar {
+  display: none;
 }
 .card_wrapper {
   width: 360px;
