@@ -23,7 +23,7 @@ const Product = (props) => {
           </div>
         )}
 
-        <div className={!showForm ? styles.hidden : ""}>
+        <div className={!showForm ? styles.hidden : styles.show_form}>
           <Form product={props.title} price={props.price} showForm={showForm} />
         </div>
       </div>

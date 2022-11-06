@@ -1,4 +1,5 @@
 .form {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -18,7 +19,7 @@
   color: aliceblue;
 }
 .submit {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .form input::placeholder {
   color: rgba(240, 248, 255, 0.651);
@@ -33,4 +34,8 @@
 }
 .hidden {
   display: none;
+}
+.show_form {
+  height: 100%;
+  width: 100%;
 }

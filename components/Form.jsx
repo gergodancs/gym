@@ -2,7 +2,7 @@ import styles from "../styles/Form.module.css";
 
 const Form = (props) => {
   return (
-    <div className={props.showForm ? "" : styles.hidden}>
+    <div className={props.showForm ? styles.show_form : styles.hidden}>
       <h2 className={styles.title}>Megrendelőlap</h2>
       <div className={styles.subtitle}>
         <span>{props.product} </span> <span>Ár: {props.price}</span>
