@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "../styles/Form.module.css";
 
 const Form = (props) => {
@@ -15,7 +15,10 @@ const Form = (props) => {
         submit="submit"
       >
         <input type="hidden" name="form-name" value="contact" />
-        <input type="hidden" name="product" value={props.title} />
+        <label hidden htmlFor="product">
+          Termék:
+        </label>
+        <input hidden type="text" name="product" defaultValue={props.product} />
 
         <label htmlFor="name">Név:</label>
         <input type="text" name="name" placeholder="Név" />

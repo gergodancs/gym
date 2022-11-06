@@ -21,7 +21,7 @@ const Product = (props) => {
       </div>
 
       <div className={showForm ? "" : styles.hidden}>
-        <Form product={props.title} />
+        <Form product={props.title} price={props.price} />
       </div>
 
       <button onClick={() => setShowForm((prevState) => !prevState)}>
