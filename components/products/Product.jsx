@@ -24,7 +24,7 @@ const Product = (props) => {
 
       {showForm && (
         <div className={showForm ? "" : styles.hidden}>
-          <Form />
+          <Form product={props.title} />
         </div>
       )}
       <button onClick={() => setShowForm((prevState) => !prevState)}>

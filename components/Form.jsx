@@ -2,12 +2,6 @@ import { useState } from "react";
 import styles from "../styles/Form.module.css";
 
 const Form = (props) => {
-  const [formValue, setFormValue] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    product: "",
-  });
   return (
     <>
       <h2 className={styles.title}>Megrendelőlap</h2>
@@ -20,7 +14,8 @@ const Form = (props) => {
         data-netlify="true"
         submit="submit"
       >
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="form-name" value={props.title} />
+        <input type="hidden" name="product" value="contact" />
 
         <label htmlFor="name">Név:</label>
         <input type="text" name="name" placeholder="Név" />
