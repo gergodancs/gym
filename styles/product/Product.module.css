@@ -5,6 +5,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 .card_wrapper {
   width: 360px;
