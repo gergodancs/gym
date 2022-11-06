@@ -2,7 +2,7 @@ import styles from "../styles/Form.module.css";
 
 const Form = (props) => {
   return (
-    <>
+    <div className={props.showForm ? "" : styles.hidden}>
       <h2 className={styles.title}>Megrendelőlap</h2>
       <div className={styles.subtitle}>
         <span>{props.product} </span> <span>Ár: {props.price}</span>
@@ -16,11 +16,6 @@ const Form = (props) => {
         submit="submit"
       >
         <input type="hidden" name="form-name" value="contact" />
-        <label hidden htmlFor="product">
-          Termék:
-        </label>
-        <input hidden type="text" name="product" defaultValue={props.product} />
-
         <label htmlFor="name">Név:</label>
         <input type="text" name="name" placeholder="Név" />
         <label htmlFor="email">Email:</label>
@@ -31,7 +26,7 @@ const Form = (props) => {
           MEGRENDELEM!
         </button>
       </form>
-    </>
+    </div>
   );
 };
 
