@@ -1,12 +1,13 @@
-import { useEffect, useState } from "react";
 import styles from "../styles/Form.module.css";
 
 const Form = (props) => {
   return (
     <>
       <h2 className={styles.title}>Megrendelőlap</h2>
-      <span>{props.title}</span>
-      <span>Ár: {props.price}</span>
+      <div className={styles.subtitle}>
+        <span>{props.product} </span> <span>Ár: {props.price}</span>
+      </div>
+
       <form
         className={styles.form}
         name="contact"

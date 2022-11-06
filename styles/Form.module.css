@@ -1,6 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 .form label {
   margin-top: 15px;
@@ -23,4 +24,10 @@
   color: rgba(240, 248, 255, 0.651);
   font-size: 1.2em;
   letter-spacing: 0.1em;
+}
+.subtitle {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
