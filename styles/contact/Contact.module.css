@@ -1,0 +1,90 @@
+.contact_container {
+  margin: 0 auto;
+  padding-top: 100px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+}
+.contact_card,
+.contact_map {
+  width: 90%;
+
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
+  border-radius: 10px;
+}
+.contact_map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_map iframe {
+  width: 90%;
+  height: 90%;
+  border-radius: 6px;
+}
+.contact_card > form {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.contact_card input {
+  padding-left: 10px;
+  width: 100%;
+  height: 32px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background: rgba(34, 34, 34, 0.671);
+  color: aliceblue;
+}
+.contact_card input::placeholder {
+  color: rgba(240, 248, 255, 0.651);
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+}
+.contact_card label {
+  margin-top: 15px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.contact_card textarea {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background: rgba(34, 34, 34, 0.671);
+  color: aliceblue;
+}
+.contact_card button {
+  color: aliceblue;
+  height: 30px;
+  border: none;
+  background-color: #222;
+  font-size: 1.3rem;
+  letter-spacing: 0.1em;
+  border-radius: 6px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: 1px 1px 3px black;
+  margin-bottom: 5px;
+  cursor: pointer;
+  z-index: 11;
+}
+.contact_card button:hover {
+  transform: scale(0.98);
+  transition-duration: 0.15s;
+  background-color: black;
+}
+.contact_card textarea::placeholder {
+  color: rgba(240, 248, 255, 0.651);
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+}
