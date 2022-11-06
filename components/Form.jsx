@@ -13,7 +13,12 @@ const Form = (props) => {
       <h2 className={styles.title}>Megrendelőlap</h2>
       <span>{props.title}</span>
       <span>Ár: {props.price}</span>
-      <form className={styles.form}>
+      <form
+        className={styles.form}
+        name="contact"
+        method="POST"
+        data-netlify="true"
+      >
         <label htmlFor="name">Név:</label>
         <input type="text" name="name" placeholder="Név" />
         <label htmlFor="email">Email:</label>
