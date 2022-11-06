@@ -19,6 +19,8 @@ const Form = (props) => {
         method="POST"
         data-netlify="true"
       >
+        <input type="hidden" name="form-name" value="contact" />
+
         <label htmlFor="name">Név:</label>
         <input type="text" name="name" placeholder="Név" />
         <label htmlFor="email">Email:</label>
