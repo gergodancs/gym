@@ -14,8 +14,8 @@ const Form = (props) => {
         data-netlify="true"
         submit="submit"
       >
-        <input type="hidden" name="form-name" value={props.title} />
-        <input type="hidden" name="product" value="contact" />
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="product" value={props.title} />
 
         <label htmlFor="name">Név:</label>
         <input type="text" name="name" placeholder="Név" />
