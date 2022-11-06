@@ -21,9 +21,14 @@ const Product = (props) => {
           <span>Ár: {props.price}</span>
         </>
       )}
-      {showForm && <Form title={props.title} price={props.price} />}
+
+      {showForm && (
+        <div className={showForm ? "" : styles.hidden}>
+          <Form />
+        </div>
+      )}
       <button onClick={() => setShowForm((prevState) => !prevState)}>
-        {showForm ? "VISSZA" : "ÉRDEKEL!"}
+        {showForm ? "VISSZA" : "MEGRENDELEM!"}
       </button>
     </div>
   );
