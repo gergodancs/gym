@@ -88,3 +88,14 @@
   font-size: 1.1em;
   letter-spacing: 0.1em;
 }
+
+@media screen and (max-width: 500px) {
+  .contact_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_card > form {
+    width: 90%;
+  }
+}
