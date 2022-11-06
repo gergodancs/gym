@@ -18,6 +18,7 @@ const Form = (props) => {
         name="contact"
         method="POST"
         data-netlify="true"
+        submit="submit"
       >
         <input type="hidden" name="form-name" value="contact" />
 
@@ -27,7 +28,9 @@ const Form = (props) => {
         <input type="email" name="email" placeholder="Email" />
         <label htmlFor="phone">Telefonszám:</label>
         <input type="text" name="phone" placeholder="Telefonszám" />
-        <button className={styles.submit}>MEGRENDELEM!</button>
+        <button type="submit" className={styles.submit}>
+          MEGRENDELEM!
+        </button>
       </form>
     </>
   );
