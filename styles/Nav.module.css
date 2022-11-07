@@ -8,10 +8,6 @@
   letter-spacing: 0.1em;
   font-weight: 600;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.09);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8.1px);
-  -webkit-backdrop-filter: blur(8.1px);
 }
 .link_container {
   width: 100%;

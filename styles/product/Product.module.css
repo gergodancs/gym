@@ -1,8 +1,10 @@
 .products_container {
+  position: relative;
+  top: 60px;
   margin: 0 auto;
-  height: 100vh;
+  height: 90vh;
   overflow-y: scroll;
-  padding-top: 100px;
+
   width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
