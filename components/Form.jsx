@@ -21,7 +21,6 @@ const Form = (props) => {
         name="contact"
         method="POST"
         data-netlify="true"
-        submit="submit"
       >
         <input type="hidden" name="form-name" value="contact" />
         <label htmlFor="name">Név:</label>
