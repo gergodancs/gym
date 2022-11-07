@@ -37,7 +37,7 @@ const Form = (props) => {
           <input type="text" name="phone" placeholder="Telefonszám" />
 
           <button className={styles.formBtn} type="submit">
-            <RiMailSendFill size={90} />
+            <RiMailSendFill size={95} />
           </button>
         </form>
       </div>
