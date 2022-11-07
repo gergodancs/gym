@@ -6,11 +6,14 @@
   justify-content: space-between;
 }
 .form label {
+  margin-left: 15px;
   margin-top: 15px;
   font-size: 1.1em;
   font-weight: 600;
 }
 .form input {
+  margin: 0 auto;
+  width: 95%;
   padding-left: 10px;
   height: 50px;
   border: none;

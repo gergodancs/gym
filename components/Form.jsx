@@ -27,18 +27,15 @@ const Form = (props) => {
           data-netlify="true"
           submit="submit"
         >
-          <div>
-            <input type="hidden" name="form-name" value="contact" />
-            <label htmlFor="name">Név:</label>
-            <input type="text" name="name" placeholder="Név" />
-            <label htmlFor="email">Email:</label>
-            <input type="email" name="email" placeholder="Email" />
-            <label htmlFor="phone">Telefonszám:</label>
-            <input type="text" name="phone" placeholder="Telefonszám" />
-          </div>
-          <div className={styles.button_container}>
-            <button type="submit">ELKÜLD!</button>
-          </div>
+          <input type="hidden" name="form-name" value="contact" />
+          <label htmlFor="name">Név:</label>
+          <input type="text" name="name" placeholder="Név" />
+          <label htmlFor="email">Email:</label>
+          <input type="email" name="email" placeholder="Email" />
+          <label htmlFor="phone">Telefonszám:</label>
+          <input type="text" name="phone" placeholder="Telefonszám" />
+
+          <button type="submit">ELKÜLD!</button>
         </form>
       </div>
     </>
