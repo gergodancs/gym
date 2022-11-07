@@ -1,9 +1,7 @@
-.form > div {
-  height: 100%;
-  margin-top: 30px;
+.form {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .form label {
   margin-left: 15px;
@@ -12,7 +10,7 @@
   font-weight: 600;
 }
 .form input {
-  margin: 0 auto;
+  align-self: center;
   width: 95%;
   padding-left: 10px;
   height: 50px;
@@ -58,12 +56,22 @@
 .hidden {
   display: none;
 }
-.form {
-}
+
 .show_form {
   height: 620px;
   width: 100%;
 }
+.formBtn {
+  background: none;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: none;
 
-.show_form > button {
+  color: rgba(34, 34, 34, 0.918);
+}
+.formBtn:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+  transition-duration: 0.2s;
+  color: black;
 }

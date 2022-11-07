@@ -1,6 +1,7 @@
 import styles from "../styles/Form.module.css";
 
 import { TiArrowBack } from "react-icons/ti";
+import { RiMailSendFill } from "react-icons/ri";
 
 const Form = (props) => {
   const onClickBack = () => props.setShowForm(false);
@@ -35,7 +36,9 @@ const Form = (props) => {
           <label htmlFor="phone">Telefonszám:</label>
           <input type="text" name="phone" placeholder="Telefonszám" />
 
-          <button type="submit">ELKÜLD!</button>
+          <button className={styles.formBtn} type="submit">
+            <RiMailSendFill size={90} />
+          </button>
         </form>
       </div>
     </>
