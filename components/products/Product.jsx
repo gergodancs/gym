@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import styles from "../../styles/product/Product.module.css";
 import Form from "../Form";
+import { motion } from "framer-motion";
 
 const Product = (props) => {
   const [showForm, setShowForm] = useState(true);
@@ -11,7 +12,16 @@ const Product = (props) => {
   }, []);
 
   return (
-    <div className={styles.card_wrapper}>
+    <motion.div
+      className={styles.card_wrapper}
+      initial={{
+        opacity: 0,
+        translateX: props.timing % 2 === 0 ? -50 : 50,
+        translateY: -50,
+      }}
+      animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+      transition={{ duration: 0.4, delay: props.timing * 0.3 }}
+    >
       <div className={styles.card}>
         {!showForm && (
           <div>
@@ -41,7 +51,7 @@ const Product = (props) => {
           <button onClick={() => setShowForm(true)}>MEGRENDELEM!</button>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 

@@ -9,6 +9,7 @@ const products = () => {
         return (
           <Product
             key={i}
+            timing={i}
             title={product.title}
             src={product.src}
             description={product.description}
