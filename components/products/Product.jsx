@@ -1,10 +1,14 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../../styles/product/Product.module.css";
 import Form from "../Form";
 
 const Product = (props) => {
-  const [showForm, setShowForm] = useState(false);
+  const [showForm, setShowForm] = useState(true);
+
+  useEffect(() => {
+    setShowForm(false);
+  }, []);
 
   return (
     <div className={styles.card_wrapper}>
