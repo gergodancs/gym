@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   height: 120px;
   width: 400px;
   background-color: rgba(27, 22, 22, 0.801);
@@ -15,7 +16,7 @@
   box-shadow: 2px 2px 4px black;
 }
 .products_btn:hover {
-  transform: scale(0.98);
+  transform: scale(0.9);
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.801);
   color: azure;
