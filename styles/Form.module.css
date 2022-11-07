@@ -1,8 +1,9 @@
-.form {
+.form > div {
+  height: 100%;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  justify-content: space-between;
 }
 .form label {
   margin-top: 15px;
@@ -18,9 +19,28 @@
   background: rgba(34, 34, 34, 0.671);
   color: aliceblue;
 }
-.submit {
-  margin-top: 40px;
+.title_container {
+  width: 100%;
+  display: flex;
+
+  align-items: center;
 }
+.title {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.icon {
+  z-index: 10;
+  color: rgba(34, 34, 34, 0.747);
+}
+.icon:hover {
+  color: black;
+  transform: scale(0.9);
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
 .form input::placeholder {
   color: rgba(240, 248, 255, 0.651);
   font-size: 1.2em;
@@ -35,7 +55,12 @@
 .hidden {
   display: none;
 }
+.form {
+}
 .show_form {
-  height: 100%;
+  height: 620px;
   width: 100%;
+}
+
+.show_form > button {
 }

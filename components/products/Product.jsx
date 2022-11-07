@@ -24,14 +24,24 @@ const Product = (props) => {
         )}
 
         <div className={!showForm ? styles.hidden : styles.show_form}>
-          <Form product={props.title} price={props.price} showForm={showForm} />
+          <Form
+            product={props.title}
+            price={props.price}
+            showForm={showForm}
+            setShowForm={setShowForm}
+          />
         </div>
       </div>
-      <div className={styles.button_container}>
-        <button onClick={() => setShowForm((prevState) => !prevState)}>
-          {showForm ? "VISSZA" : "MEGRENDELEM!"}
-        </button>
-      </div>
+      {!showForm && (
+        <div className={styles.button_container}>
+          <button onClick={() => setShowForm(true)}>MEGRENDELEM!</button>
+        </div>
+      )}
+      {showForm && (
+        <div className={styles.button_container}>
+          <button type="submit">MEGRENDELEM!</button>
+        </div>
+      )}
     </div>
   );
 };
