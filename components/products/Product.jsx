@@ -37,11 +37,6 @@ const Product = (props) => {
           <button onClick={() => setShowForm(true)}>MEGRENDELEM!</button>
         </div>
       )}
-      {showForm && (
-        <div className={styles.button_container}>
-          <button type="submit">MEGRENDELEM!</button>
-        </div>
-      )}
     </div>
   );
 };

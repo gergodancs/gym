@@ -36,6 +36,9 @@ const Form = (props) => {
             <label htmlFor="phone">Telefonszám:</label>
             <input type="text" name="phone" placeholder="Telefonszám" />
           </div>
+          <div className={styles.button_container}>
+            <button type="submit">ELKÜLD!</button>
+          </div>
         </form>
       </div>
     </>
