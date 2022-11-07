@@ -1,9 +1,5 @@
 .products_container {
-  position: relative;
-  top: 60px;
   margin: 0 auto;
-  height: 90vh;
-  overflow-y: scroll;
 
   width: 80%;
   display: grid;

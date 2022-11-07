@@ -4,12 +4,10 @@ import Nav from "./Nav";
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className={styles.app_container}>
       <Nav />
-      <div className={styles.app_container}>
-        <main className={styles.main}>{children}</main>
-      </div>
-    </>
+      <main className={styles.main}>{children}</main>
+    </div>
   );
 };
 
