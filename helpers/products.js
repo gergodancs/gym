@@ -1,9 +1,15 @@
 import minimalist from "../public/minimalist.jpg";
+import maximalist from "../public/maximalist.jpg";
+import minimalistsm from "../public/minimalistsm.jpg";
+import customrack from "../public/custoomrack.jpg";
+import sqrack from "../public/sqrack.jpg";
+import diprack from "../public/diprack.jpg";
+import tbar from "../public/tbar.jpg";
 
 export const PRODUCTS = [
   {
     title: "Minimalist",
-    src: minimalist,
+    src: minimalistsm,
     description:
       "Falhozrögzíthető erőkeret és húzódzkodó állvány, ami kis helyet foglal, masszív és zajmentes, tökéletes választás a pihenőnapok elcsalására.",
     price: "125.000 Ft",
@@ -12,7 +18,7 @@ export const PRODUCTS = [
   },
   {
     title: "Maximalist",
-    src: minimalist,
+    src: maximalist,
     description:
       "Szabadonálló erőkeret és húzódzkodó állvány, masszív és zajmentes, tökéletes választás szabadtéri edzésekhez.",
     price: "198.000 Ft",
@@ -21,14 +27,14 @@ export const PRODUCTS = [
   },
   {
     title: "CUSTOM RACK",
-    src: minimalist,
+    src: customrack,
     description:
       "Erőkeret és húzódzkodó állvány és bármi, amit kitalálsz. Robosztus, elnyűhetetlen darab, aminek csak a fantáziád szabhat határt, akár csigával is!",
     price: "Egyedi árazás",
   },
   {
     title: "SQUAT RACK",
-    src: minimalist,
+    src: sqrack,
     description:
       "Nincs több elcsalt lábnap! Profi guggoló keretünk az igényeidhez igazítva örök darabja lesz a garázsodnak, edzőtermednek.",
     price: "80.000 Ft",
@@ -37,14 +43,14 @@ export const PRODUCTS = [
   },
   {
     title: "DIP RACK",
-    src: minimalist,
+    src: diprack,
     description:
       "Erőkerethez és húzódzkodó állványhoz tökéletesen passzoló, könnyen le és felszerelhető tolodzkodó.",
     price: "45.000 Ft",
   },
   {
     title: "T-rudas EVEZŐ",
-    src: minimalist,
+    src: tbar,
     description:
       "Földre rögzíthető, vagy erőkerethez és húzódzkodó állványhoz tökéletesen passzoló, könnyen le és felszerelhető T-rudas evező támasz, amivel megsokszorozhatod erőkereted funkcionalitását.",
     price: "18.000 Ft-tól",
