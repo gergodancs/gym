@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 35px;
   height: 120px;
   width: 400px;
   background-color: rgba(27, 22, 22, 0.801);
@@ -22,6 +22,7 @@
   color: azure;
   transition-duration: 0.2s;
 }
+
 @media screen and (max-width: 376px) {
   .products_btn {
     top: 50px;

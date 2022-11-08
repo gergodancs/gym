@@ -14,7 +14,8 @@ const ProductsBtn = () => {
       animate={{ opacity: 1, translateX: 0, scale: [0, 1, 1.1, 1] }}
       transition={{ duration: 0.4, delay: 2.5 }}
     >
-      <Link href="/products">ERŐKERETEINK</Link>
+      <Link href="/products">ESZKÖZÖK</Link>
+
       <Link href="/products">
         <BsFillForwardFill size={40} />
       </Link>

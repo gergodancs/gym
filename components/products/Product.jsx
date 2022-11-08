@@ -30,7 +30,7 @@ const Product = (props) => {
               src={props.src}
               alt="product for sale"
               width={300}
-              height={350}
+              height={300}
             />
             <p>{props.description}</p>
             <span>Ár: {props.price}</span>
