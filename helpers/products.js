@@ -4,7 +4,21 @@ import minimalistsm from "../public/minimalistsm.jpg";
 import customrack from "../public/custoomrack.jpg";
 import sqrack from "../public/sqrack.jpg";
 import diprack from "../public/diprack.jpg";
-import tbar from "../public/tbar.jpg";
+import tbar from "../public/trudas.jpg";
+import rope from "../public/kotel_razo.jpg";
+import jhook from "../public/J-hook.jpg";
+import majomletra from "../public/majomletra.jpg";
+import tarcsatarto from "../public/tarcsa_tarto.jpg";
+import egyedi from "../public/egyedi_erokeret.jpg";
+import safety from "../public/sulytarto.jpg";
+import barholder from "../public/feli_rudtarto.jpg";
+import hex from "../public/Hexbar.jpg";
+import bordas from "../public/bordas.jpg";
+import sled from "../public/sled.jpg";
+import revolver from "../public/rev.jpg";
+
+import pullup from "../public/pullup.jpg";
+import pad from "../public/pad.jpg";
 
 export const PRODUCTS = [
   {
@@ -18,16 +32,16 @@ export const PRODUCTS = [
   },
   {
     title: "Maximalist",
-    src: maximalist,
+    src: customrack,
     description:
       "Szabadonálló erőkeret és húzódzkodó állvány, masszív és zajmentes, tökéletes választás szabadtéri edzésekhez.",
-    price: "198.000 Ft",
+    price: "198.000 Ft-tól",
     details:
       "60x60-as szelvényből készült masszív kivitel, feketére festett. Igény esetén szinterezett, tűzihorganyzott (kültéri használat esetén ajánlott)  A keret úgy került kialakításra, hogy a későbbiekben a kiegészítőkkel bővithető legyen. 1 pár J-hookal. ",
   },
   {
     title: "CUSTOM RACK",
-    src: customrack,
+    src: egyedi,
     description:
       "Erőkeret és húzódzkodó állvány és bármi, amit kitalálsz. Robosztus, elnyűhetetlen darab, aminek csak a fantáziád szabhat határt, akár csigával is!",
     price: "Egyedi árazás",
@@ -58,39 +72,34 @@ export const PRODUCTS = [
 
   {
     title: "ROPERACK",
-    src: minimalist,
+    src: rope,
     description:
       "Erőkerethez és húzódzkodó állványhoz tökéletesen passzoló, könnyen le és felszerelhető kötélrázó foglalat, ami elengedhetetlen kiegészítője lesz az állóképességi edzéseidnek.",
     price: "8.000 Ft",
   },
   {
     title: "Safety RACK",
-    src: minimalist,
+    src: safety,
     description: "Biztonsági súlytartó erőkerethez párban.",
     price: "28.000 Ft",
   },
   {
     title: "J-HOOK's",
-    src: minimalist,
+    src: jhook,
     description: "Az ár egy párra vonatkozik",
     price: "12.000 Ft",
   },
-  {
-    title: "Safety RACK",
-    src: minimalist,
-    description: "Biztonsági súlytartó erőkerethez párban.",
-    price: "28.000 Ft",
-  },
+
   {
     title: "PULL UPs everywhere..",
-    src: minimalist,
+    src: pullup,
     description:
       "Falra szerelhető, masszív és zajmentes húzódzkodó, egyenes, hajlított, bármilyen kivitelben.",
     price: "55.000Ft",
   },
   {
     title: "BAR RACK",
-    src: minimalist,
+    src: barholder,
     description: "Falra szerelhető, masszív rúdtartó állvány.",
     price: "38.000Ft",
   },
@@ -102,38 +111,38 @@ export const PRODUCTS = [
   },
   {
     title: "CUSTOM SLED",
-    src: minimalist,
+    src: sled,
     description: "Egyedi szán, végletekig terhelhető, örökdarab.",
     price: "87.000Ft",
   },
   {
     title: "BORDÁSFAL",
-    src: minimalist,
+    src: bordas,
     description: "Masszív bordásfalak, fém, vagy fa-fém kombinációban.",
     price: "80.000 FT-tól",
   },
   {
     title: "MAJOMLÉTRA",
-    src: minimalist,
+    src: majomletra,
     description: "",
     price: "60.000 Ft",
   },
   {
     title: "PLATE RACK",
-    src: minimalist,
+    src: tarcsatarto,
     description: "Falra szerelheő súlytárcsa tartó.",
     price: "6.000 FT-tól",
   },
   {
     title: "Revolver PULLUP",
-    src: minimalist,
+    src: revolver,
     description:
       "Ha már nagyon jól megy a húzódzkodás itt az ideje kicsit megfűszerezni az edzéseket ezzel a kiegészítőnkkkel.",
     price: "90.000",
   },
   {
     title: "BARS",
-    src: minimalist,
+    src: hex,
     description: "Svéd és Hex rudak, masszív, elnyűhetetlen kivitelben",
     price: "39.000 Ft",
   },
@@ -146,7 +155,7 @@ export const PRODUCTS = [
   },
   {
     title: "Öltöző pad",
-    src: minimalist,
+    src: pad,
     description: "Az ára 1 méterre vonatkozik!",
     price: "25.000 Ft",
   },
