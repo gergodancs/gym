@@ -1,7 +1,9 @@
 .nav {
+  background-color: rgba(240, 255, 255, 0.322);
   width: 100%;
   padding: 5px 15px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   color: rgb(39, 37, 37);
   letter-spacing: 0.1em;
@@ -9,7 +11,6 @@
   z-index: 10;
 }
 .link_container {
-  width: 100%;
   display: flex;
   align-items: center;
   list-style: none;
