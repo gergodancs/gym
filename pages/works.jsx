@@ -1,4 +1,4 @@
-import { useState } from "react";
+import Footer from "../components/Footer";
 import styles from "../styles/carousel/Carousel.module.css";
 import Image from "next/image";
 import bordas from "../public/carousel/bordasfal.jpg";
@@ -11,8 +11,6 @@ import nagykeret from "../public/carousel/nagykeret.jpg";
 import pad from "../public/carousel/pad.jpg";
 
 import sled from "../public/carousel/szan.jpg";
-
-import { motion } from "framer-motion";
 
 const works = () => {
   const pics = [
@@ -27,23 +25,24 @@ const works = () => {
     sled,
     pad,
   ];
-  const [small, setSmall] = useState(true);
 
   return (
-    <div className={styles.page_container}>
-      <div className={styles.content}>
-        {pics.map((img, i) => (
-          <Image
-            onClick={() => setSmall((prevState) => !prevState)}
-            className={styles.img}
-            src={img}
-            key={i}
-            width={small ? 600 : 400}
-            height={small ? 600 : 400}
-          />
-        ))}
+    <>
+      <div className={styles.page_container}>
+        <div className={styles.content}>
+          {pics.map((img, i) => (
+            <Image
+              className={styles.img}
+              src={img}
+              key={i}
+              width={400}
+              height={400}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 };
 
