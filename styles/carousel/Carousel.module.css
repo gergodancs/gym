@@ -20,28 +20,70 @@
 }
 .pics {
   position: absolute;
-
+  width: 60vw;
+  max-height: 80vh;
   overflow: hidden;
   background: white;
   border-radius: 20px;
   top: -45vh;
 }
 .pics > img {
+  width: 100%;
+  height: auto;
 }
 
 .left {
   position: absolute;
   background-color: transparent;
-  width: 300px;
   height: 100%;
+  width: 100px;
+
   z-index: 10;
+  color: rgba(12, 12, 12, 0.466);
 }
 .right {
   position: absolute;
   background-color: transparent;
-
-  left: 65%;
-  width: 300px;
+  color: rgba(12, 12, 12, 0.466);
+  left: 85%;
+  width: 100px;
   height: 100%;
   z-index: 10;
+}
+.left:hover {
+  color: rgb(12, 12, 12);
+  transform: scale(1.5);
+  transition-duration: 0.2s;
+}
+.right :hover {
+  color: rgb(12, 12, 12);
+  transform: scale(1.5);
+  transition-duration: 0.2s;
+}
+.hidden {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .pics > img {
+    height: auto;
+  }
+  .row {
+    margin-top: 100px;
+  }
+  .pics {
+    margin-left: 10px;
+  }
+  .left {
+    width: 50px;
+  }
+  .left:hover {
+    transform: scale(1.1);
+  }
+  .right:hover {
+    transform: scale(1.1);
+  }
+  .right {
+    width: 50px;
+    left: 77%;
+  }
 }

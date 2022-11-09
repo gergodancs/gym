@@ -4,12 +4,16 @@ import Image from "next/image";
 import bordas from "../public/carousel/bordasfal.jpg";
 import egyedi from "../public/carousel/egyedi_erokeret.jpg";
 import revolver from "../public/carousel/revolver.jpg";
+import { useSwipeable } from "react-swipeable";
+import { HiArrowLeftCircle, HiArrowRightCircle } from "react-icons/hi";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 import { motion } from "framer-motion";
 
 const works = () => {
   const pics = [bordas, egyedi, revolver];
   const [position, setPosition] = useState(0);
+
   const onRight = () => {
     if (position <= pics.length - 2) {
       setPosition(position + 1);
@@ -20,12 +24,15 @@ const works = () => {
       setPosition(position - 1);
     }
   };
+
   return (
     <div className={styles.carousel_container}>
+      <FaArrowLeft />
       <div className={styles.row}>
         {pics.map((img, i) => {
           return (
             <motion.div
+              key={i}
               initial={{
                 scale: 0,
               }}
@@ -40,9 +47,19 @@ const works = () => {
               }}
               className={styles.pics}
             >
-              <button className={styles.left} onClick={onLeft}></button>
+              <button
+                className={i === 0 ? styles.hidden : styles.left}
+                onClick={onLeft}
+              >
+                <FaArrowLeft size={30} />
+              </button>
               <Image src={img} width={800} height={600} alt="pics" />
-              <button className={styles.right} onClick={onRight}></button>
+              <button
+                className={i === pics.length - 1 ? styles.hidden : styles.right}
+                onClick={onRight}
+              >
+                <FaArrowRight size={30} />
+              </button>
             </motion.div>
           );
         })}
