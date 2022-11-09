@@ -11,7 +11,7 @@ const Nav = () => {
           <Link href="/">Főoldal</Link>
         </li>
         <li>
-          <Link href="/my-works">Munkáink</Link>
+          <Link href="/works">Munkáink</Link>
         </li>
         <li>
           <Link href="/contact">Kapcsolat</Link>
