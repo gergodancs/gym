@@ -14,7 +14,6 @@ const Form = (props) => {
     <div className={props.showForm ? styles.show_form : styles.hidden}>
       <div className={styles.title_container}>
         <TiArrowBack className={styles.icon} size={40} onClick={onClickBack} />
-        <h2 className={styles.title}>Megrendelőlap</h2>
       </div>
 
       <div className={styles.subtitle}>
