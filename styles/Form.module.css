@@ -6,20 +6,21 @@
 }
 .form label {
   margin-left: 15px;
-  margin-top: 15px;
-  font-size: 1.1em;
+  letter-spacing: 0.1em;
+  font-size: 0.9em;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 .form input {
   align-self: center;
   width: 95%;
   padding-left: 10px;
-  height: 50px;
+  height: 30px;
   border: none;
+  border-bottom: 1px solid black;
   outline: none;
   border-radius: 3px;
-  background: rgba(34, 34, 34, 0.671);
-  color: aliceblue;
+  background: none;
 }
 .title_container {
   width: 100%;
@@ -43,13 +44,8 @@
   transition-duration: 0.2s;
 }
 
-.form input::placeholder {
-  color: rgba(240, 248, 255, 0.651);
-  font-size: 1.2em;
-  letter-spacing: 0.1em;
-}
 .subtitle {
-  margin-top: 20px;
+  margin: 30px 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -64,18 +60,33 @@
   width: 100%;
 }
 .formBtn {
-  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #222;
   margin: 0 auto;
   margin-top: 30px;
   border: none;
+  width: 70%;
+  height: 40px;
+  border-radius: 20em;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
 
-  color: rgba(34, 34, 34, 0.918);
+  color: rgba(197, 195, 195, 0.918);
 }
 .formBtn:hover {
-  transform: scale(0.9);
+  transform: scale(0.98);
   cursor: pointer;
   transition-duration: 0.2s;
-  color: black;
+  color: white;
+  background: rgb(15, 15, 15);
+}
+.p {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15px;
 }
 @media screen and (max-width: 500px) {
   .show_form {
