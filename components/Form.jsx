@@ -6,9 +6,11 @@ import { RiMailSendFill } from "react-icons/ri";
 
 const Form = (props) => {
   const [product, setProduct] = useState("");
+
   useEffect(() => {
     setProduct(props.title);
-  }, []);
+  }, [props.showForm]);
+
   const onClickBack = () => props.setShowForm(false);
   return (
     <div className={props.showForm ? styles.show_form : styles.hidden}>
